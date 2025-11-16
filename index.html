@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <title>Videos Bakanes - Home</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background-color: #f7f7f7; /* Fondo recomendado */
+    }
+
+    /* Centrado de imágenes */
+    .center {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Animación hover */
+    .zoom-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
   <h1>😀Videos Bakanes😀</h1>
@@ -22,25 +45,29 @@
 
   <h2>Dueños de Mascotas</h2>
   <p>¿Quieres tener un video bakán de tu linda mascota para subirlo a Instagram? Haz click aquí.</p>
-  <a href="mascotas.html">Ir a Dueños de Mascotas </a>
-  <a href="mascotas.html">Ir a Dueños de Mascotas <img src="luna.jpg" alt="Foto de Luna" width="400"> </a>
+
+  <div class="center">
+    <a href="mascotas.html">
+      <img src="luna.jpg" alt="Foto de Luna" width="400" class="zoom-img">
+    </a>
+  </div>
 
   <hr>
+
   <h2>Dueños de PyMEs</h2>
   <p>¿Necesitas generar videos y contenido para tu tienda o taller? Haz click aquí.</p>
-  <p>
-    <a href="pymes.html">Ir a Dueños de PyMEs</a>
-  </p>
-  <p>
-    <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400">
-  </p>
+
+  <div class="center">
+    <a href="pymes.html">
+      <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400" class="zoom-img">
+    </a>
+  </div>
 
   <hr>
 
   <p>
     <a href="contacto.html">Contacto</a>
   </p>
+
 </body>
 </html>
-
-
