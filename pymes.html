@@ -14,10 +14,10 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      text-align: center; /* CENTRADO TOTAL */
     }
 
-    /* ===== HEADER ===== */
+    /* HEADER */
     header {
       background: #ffffff;
       text-align: center;
@@ -39,14 +39,14 @@
       font-size: 2rem;
     }
 
-    /* ===== MENÚ ===== */
+    /* MENÚ */
     nav {
       margin: 15px 0;
     }
 
     nav a {
       display: inline-block;
-      padding: 10px 18px;
+      padding: 8px 14px;
       margin: 0 6px;
       background: #ffffff;
       border-radius: 8px;
@@ -54,7 +54,8 @@
       color: #333;
       font-weight: bold;
       border: 1px solid #ddd;
-      transition: 0.3s;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 1rem;
     }
 
     nav a:hover {
@@ -62,7 +63,7 @@
       transform: translateY(-2px);
     }
 
-    /* ===== IMÁGENES ===== */
+    /* IMÁGENES */
     .zoom-img {
       width: 100%;
       max-width: 800px;
@@ -76,18 +77,18 @@
     }
 
     .contacto-section {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: bold;
       margin: 40px 0;
     }
 
-    /* ===== WHATSAPP ===== */
+    /* WHATSAPP */
     .whatsapp-btn {
       position: fixed;
       right: 20px;
       bottom: 20px;
-      width: 65px;
-      height: 65px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: #25D366;
       display: flex;
@@ -98,55 +99,56 @@
     }
 
     .whatsapp-btn img {
-      width: 38px;
-      height: 38px;
+      width: 34px;
     }
 
-    /* ===== CELULAR ===== */
+    /* CELULAR */
     @media (max-width: 600px) {
-      body { font-size: 1.6rem; }
+      body { font-size: 1.3rem; }
       header img { width: 60px; height: 60px; }
-      header h1 { font-size: 2.4rem; }
-      nav a { padding: 18px 24px; font-size: 1.6rem; }
-      h2 { font-size: 2.2rem; }
-      p { font-size: 1.6rem; }
-      .zoom-img { width: 100% !important; max-width: 100% !important; }
-      .contacto-section { font-size: 2.3rem; }
+      header h1 { font-size: 2rem; }
+      nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
+      h2 { font-size: 1.8rem; }
+      p { font-size: 1.3rem; }
+      .zoom-img { max-width: 100% !important; }
+      .contacto-section { font-size: 1.8rem; }
+      .whatsapp-btn { width: 55px; height: 55px; }
+      .whatsapp-btn img { width: 30px; }
     }
 
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="favicon.svg" alt="Logo VB">
-    <h1>VIDEOS BAKANES</h1>
-  </header>
+<header>
+  <img src="favicon.svg">
+  <h1>VIDEOS BAKANES</h1>
+</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pymes.html">Dueños de PyMEs</a>
-    <a href="mascotas.html">Dueños de Mascotas</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pymes.html">Dueños de PyMEs</a>
+  <a href="mascotas.html">Dueños de Mascotas</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
 
-  <h2>Videos Profesionales para tu Negocio</h2>
-  <p>
-    ¿Quieres mostrar tus productos o servicios de forma profesional?<br>
-    Haz click <a href="contacto.html"><b>aquí</b></a>.
-  </p>
+<h2>Videos Profesionales para tu Negocio</h2>
+<p>
+  ¿Quieres mostrar tus productos o servicios de forma profesional?<br>
+  Haz click <a href="contacto.html"><b>aquí</b></a>.
+</p>
 
-  <a href="contacto.html">
-    <img src="pyme.jpg" class="zoom-img" alt="PyME">
-  </a>
+<a href="contacto.html">
+  <img src="pyme.jpg" class="zoom-img">
+</a>
 
-  <p class="contacto-section">
-    <a href="contacto.html">Contacto</a>
-  </p>
+<p class="contacto-section">
+  <a href="contacto.html">Contacto</a>
+</p>
 
-  <a class="whatsapp-btn" href="https://wa.me/56982855148">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-  </a>
+<a class="whatsapp-btn" href="https://wa.me/56982855148">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
 
 </body>
 </html>
