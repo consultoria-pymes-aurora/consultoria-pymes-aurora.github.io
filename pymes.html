@@ -11,25 +11,37 @@
     body {
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
 
-    .zoom-img {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 10px;
-      width: 400px;
-      max-width: 90%;
-      margin-top: 20px;
+    /* ===== HEADER PROFESIONAL (Opción B) ===== */
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 25px 0 10px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .zoom-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
     }
 
+    header h1 {
+      margin: 8px 0 0 0;
+      font-size: 2rem;
+    }
+
+    /* ===== MENÚ ===== */
     nav {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 15px 0;
     }
 
     nav a {
@@ -46,75 +58,4 @@
     }
 
     nav a:hover {
-      background: #e6e6e6;
-      transform: translateY(-2px);
-    }
-
-    .contacto-section {
-      text-align: center !important;
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin: 50px 0;
-      width: 100%;
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-
-      body { font-size: 1.35rem; }
-
-      h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.9rem; }
-      p { font-size: 1.35rem; }
-
-      nav a {
-        padding: 16px 22px;
-        font-size: 1.35rem;
-      }
-
-      img {
-        width: 92% !important;
-        max-width: 540px;
-      }
-
-      .contacto-section {
-        font-size: 2.2rem !important;
-      }
-    }
-
-  </style>
-</head>
-<body>
-
-  <h1>😀Dueños de PyMEs😀</h1>
-  <p>(Videos bakánes hechos con cariño para tu negocio)</p>
-
-  <hr>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pymes.html">Dueños de PyMEs</a>
-    <a href="mascotas.html">Dueños de Mascotas</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-
-  <hr>
-
-  <h2>Videos Profesionales para tu Negocio</h2>
-  <p>
-    ¿Quieres mostrar tus productos y servicios con estilo?<br>
-    Haz click <a href="contacto.html"><b>aquí</b></a>.
-  </p>
-
-  <a href="contacto.html">
-    <img src="pyme.jpg" alt="PyME" class="zoom-img">
-  </a>
-
-  <hr>
-
-  <p class="contacto-section">
-    <a href="contacto.html">Contacto</a>
-  </p>
-
-</body>
-</html>
+      back
