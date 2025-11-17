@@ -94,3 +94,120 @@
       border: 1px solid #ddd;
       padding: 12px 18px;
       border-radius: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .back-home a:hover {
+      background: #e6e6e6;
+    }
+
+    /* ===== BOTÓN WHATSAPP FLOTANTE ===== */
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      z-index: 2000;
+    }
+
+    .whatsapp-btn img {
+      width: 38px;
+      height: 38px;
+    }
+
+    /* ===== MODO CELULAR ===== */
+    @media (max-width: 600px) {
+
+      body { font-size: 1.35rem; }
+
+      header img { width: 60px; height: 60px; }
+      header h1 { font-size: 2rem; }
+
+      nav a {
+        padding: 16px 22px;
+        font-size: 1.35rem;
+      }
+
+      .contact-card {
+        padding: 30px 25px;
+      }
+
+      .contact-card p, ul {
+        font-size: 1.35rem;
+      }
+
+      .contact-card h2 {
+        font-size: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="favicon.svg">
+    <h1>VIDEOS BAKANES</h1>
+  </header>
+
+  <!-- MENÚ -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pymes.html">Dueños de PyMEs</a>
+    <a href="mascotas.html">Dueños de Mascotas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- TARJETA -->
+  <div class="contact-card">
+
+    <h2>Contáctame por WhatsApp</h2>
+
+    <p>
+      Respondo siempre por WhatsApp — es la forma más rápida y directa de hablar conmigo.
+    </p>
+
+    <p>
+      👉 <a href="https://wa.me/56982855148"><b>Haz click aquí para escribirme por WhatsApp</b></a>
+    </p>
+
+    <p>
+      Cuéntame qué tipo de video necesitas y te doy ideas y recomendaciones.
+    </p>
+
+    <p><b>Mascotas 🐶</b></p>
+    <ul>
+      <li>Nombre de tu mascota</li>
+      <li>Qué te gustaría mostrar</li>
+      <li>Para qué red social lo quieres</li>
+    </ul>
+
+    <p><b>PyMEs 🛠️</b></p>
+    <ul>
+      <li>Nombre de tu negocio</li>
+      <li>Qué quieres destacar</li>
+      <li>Para qué usarás el video</li>
+    </ul>
+
+  </div>
+
+  <div class="back-home">
+    <a href="index.html">Volver al Home</a>
+  </div>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a class="whatsapp-btn" href="https://wa.me/56982855148">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  </a>
+
+</body>
+</html>
