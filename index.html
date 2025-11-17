@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Videos Bakanes - Home</title>
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -66,15 +67,16 @@
       margin: 20px 0;
     }
 
+    /* ===== IMÁGENES ===== */
     .zoom-img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 10px;
-      width: 400px;
-      max-width: 90%;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 800px;
     }
 
     .zoom-img:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
@@ -106,30 +108,31 @@
       height: 38px;
     }
 
-    /* ===== MODO CELULAR ===== */
+    /* ===== MODO CELULAR — IMÁGENES 100% ANCHO ===== */
     @media (max-width: 600px) {
 
-      body { font-size: 1.35rem; }
+      body { font-size: 1.6rem; }
 
       header img { width: 60px; height: 60px; }
 
-      header h1 { font-size: 2rem; }
-
-      h2 { font-size: 1.9rem; }
-
-      p, nav a { font-size: 1.35rem; }
+      header h1 { font-size: 2.4rem; }
 
       nav a {
-        padding: 16px 22px;
+        padding: 18px 24px;
+        font-size: 1.6rem;
       }
 
-      img {
-        width: 92% !important;
-        max-width: 540px;
+      h2 { font-size: 2.2rem; }
+      p { font-size: 1.6rem; }
+
+      /* IMAGENES LLENAN TODO EL ANCHO DEL TELÉFONO */
+      .zoom-img {
+        width: 100% !important;
+        max-width: 100% !important;
       }
 
       .contacto-section {
-        font-size: 2.2rem !important;
+        font-size: 2.4rem !important;
       }
     }
 
@@ -139,7 +142,7 @@
 
   <!-- HEADER -->
   <header>
-    <img src="favicon.svg">
+    <img src="favicon.svg" alt="Logo VB">
     <h1>VIDEOS BAKANES</h1>
   </header>
 
@@ -159,7 +162,7 @@
 
   <div class="center">
     <a href="mascotas.html">
-      <img src="luna.jpg" class="zoom-img">
+      <img src="luna.jpg" class="zoom-img" alt="Luna">
     </a>
   </div>
 
@@ -173,7 +176,7 @@
 
   <div class="center">
     <a href="pymes.html">
-      <img src="pyme.jpg" class="zoom-img">
+      <img src="pyme.jpg" class="zoom-img" alt="PyME">
     </a>
   </div>
 
@@ -185,7 +188,7 @@
 
   <!-- BOTÓN WHATSAPP -->
   <a class="whatsapp-btn" href="https://wa.me/56982855148">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
 </body>
