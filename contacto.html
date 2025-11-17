@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -16,15 +17,14 @@
       text-align: center;
     }
 
-    /* ===== HEADER PROFESIONAL (Opción B) ===== */
     header {
-      background: #ffffff;
+      background: white;
       text-align: center;
       padding: 25px 0 10px 0;
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
     }
 
     header img {
@@ -34,75 +34,37 @@
     }
 
     header h1 {
-      margin: 8px 0 0 0;
       font-size: 2rem;
-    }
-
-    /* ===== MENÚ ===== */
-    nav {
-      text-align: center;
-      margin: 15px 0;
+      margin-top: 10px;
     }
 
     nav a {
       display: inline-block;
       padding: 10px 18px;
-      margin: 0 6px;
-      background: #ffffff;
+      margin: 6px;
+      background: #fff;
+      border: 1px solid #ddd;
       border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
       color: #333;
-      font-weight: bold;
-      border: 1px solid #ddd;
-      transition: background 0.3s ease, transform 0.2s ease;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-      background: #e6e6e6;
-      transform: translateY(-2px);
-    }
-
-    /* ===== TARJETA ===== */
     .contact-card {
       max-width: 600px;
-      margin: 30px auto 50px auto;
-      background: #ffffff;
+      background: #fff;
+      margin: 30px auto;
+      padding: 25px;
       border-radius: 12px;
-      padding: 25px 20px;
       box-shadow: 0 8px 18px rgba(0,0,0,0.1);
       text-align: left;
     }
 
-    .contact-card h2 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 1.8rem;
+    .contact-card p {
+      font-size: 1.35rem;
     }
 
-    .contact-card p, ul {
-      font-size: 1.25rem;
-      line-height: 1.6;
-    }
-
-    .back-home {
-      margin-bottom: 40px;
-    }
-
-    .back-home a {
-      text-decoration: none;
-      background: #ffffff;
-      border: 1px solid #ddd;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .back-home a:hover {
-      background: #e6e6e6;
-    }
-
-    /* ===== BOTÓN WHATSAPP FLOTANTE ===== */
     .whatsapp-btn {
       position: fixed;
       right: 20px;
@@ -118,96 +80,40 @@
       z-index: 2000;
     }
 
-    .whatsapp-btn img {
-      width: 38px;
-      height: 38px;
-    }
-
-    /* ===== MODO CELULAR ===== */
     @media (max-width: 600px) {
-
-      body { font-size: 1.35rem; }
-
-      header img { width: 60px; height: 60px; }
-      header h1 { font-size: 2rem; }
-
-      nav a {
-        padding: 16px 22px;
-        font-size: 1.35rem;
-      }
-
-      .contact-card {
-        padding: 30px 25px;
-      }
-
-      .contact-card p, ul {
-        font-size: 1.35rem;
-      }
-
-      .contact-card h2 {
-        font-size: 2rem;
-      }
+      body { font-size: 1.6rem; }
+      header img { width: 60px; }
+      header h1 { font-size: 2.4rem; }
+      nav a { font-size: 1.6rem; padding: 18px 22px; }
+      .contact-card p { font-size: 1.6rem; }
+      .contact-card h2 { font-size: 2.2rem; }
     }
 
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="favicon.svg">
-    <h1>VIDEOS BAKANES</h1>
-  </header>
+<header>
+  <img src="favicon.svg">
+  <h1>VIDEOS BAKANES</h1>
+</header>
 
-  <!-- MENÚ -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pymes.html">Dueños de PyMEs</a>
-    <a href="mascotas.html">Dueños de Mascotas</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pymes.html">Dueños de PyMEs</a>
+  <a href="mascotas.html">Dueños de Mascotas</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
 
-  <!-- TARJETA -->
-  <div class="contact-card">
+<div class="contact-card">
+  <h2>Contáctame por WhatsApp</h2>
+  <p>Respondo siempre por WhatsApp — es la forma más rápida.</p>
+  <p>👉 <a href="https://wa.me/56982855148"><b>Haz click aquí</b></a></p>
+</div>
 
-    <h2>Contáctame por WhatsApp</h2>
-
-    <p>
-      Respondo siempre por WhatsApp — es la forma más rápida y directa de hablar conmigo.
-    </p>
-
-    <p>
-      👉 <a href="https://wa.me/56982855148"><b>Haz click aquí para escribirme por WhatsApp</b></a>
-    </p>
-
-    <p>
-      Cuéntame qué tipo de video necesitas y te doy ideas y recomendaciones.
-    </p>
-
-    <p><b>Mascotas 🐶</b></p>
-    <ul>
-      <li>Nombre de tu mascota</li>
-      <li>Qué te gustaría mostrar</li>
-      <li>Para qué red social lo quieres</li>
-    </ul>
-
-    <p><b>PyMEs 🛠️</b></p>
-    <ul>
-      <li>Nombre de tu negocio</li>
-      <li>Qué quieres destacar</li>
-      <li>Para qué usarás el video</li>
-    </ul>
-
-  </div>
-
-  <div class="back-home">
-    <a href="index.html">Volver al Home</a>
-  </div>
-
-  <!-- BOTÓN WHATSAPP -->
-  <a class="whatsapp-btn" href="https://wa.me/56982855148">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-  </a>
+<a class="whatsapp-btn" href="https://wa.me/56982855148">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
 
 </body>
 </html>
