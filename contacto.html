@@ -2,27 +2,161 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Videos Bakanes - Contacto</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contacto</title>
+
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Menú igual al resto del sitio */
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 0 6px;
+      background: #ffffff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+    /* Contenedor principal de contacto */
+    .contact-card {
+      max-width: 600px;
+      margin: 30px auto 50px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .contact-card h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .contact-card p {
+      line-height: 1.5;
+    }
+
+    .contact-section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .contact-list {
+      margin: 0 0 10px 0;
+      padding-left: 18px;
+    }
+
+    .contact-list li {
+      margin-bottom: 6px;
+    }
+
+    /* Botón “Volver al Home” */
+    .back-home {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .back-home a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-home a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+  </style>
 </head>
 <body>
-  <h1>Contacto</h1>
 
+  <h1>😀Contacto😀</h1>
+  <p>(Conversemos sobre el video bakán que quieres hacer)</p>
+
+  <hr>
+
+  <!-- Menú igual que en las otras páginas -->
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="pymes.html">Dueños de PyMEs</a> |
-    <a href="mascotas.html">Dueños de Mascotas</a> |
+    <a href="index.html">Home</a>
+    <a href="pymes.html">Dueños de PyMEs</a>
+    <a href="mascotas.html">Dueños de Mascotas</a>
     <a href="contacto.html">Contacto</a>
   </nav>
 
   <hr>
 
-  <p>Envíame un mensaje y coordinamos por WhatsApp:</p>
-  <p>
-    <a href="https://wa.me/56982855148" target="_blank">
-      Escríbeme por WhatsApp
-    </a>
-  </p>
+  <!-- Tarjeta de contacto -->
+  <div class="contact-card">
+    <h2>¿Qué te gustaría grabar?</h2>
+    <p>
+      Cuéntame qué tipo de video necesitas y te respondo con ideas y opciones
+      para que tu contenido quede realmente bakán.
+    </p>
+
+    <p class="contact-section-title">Si tu video es sobre tu mascota 🐶</p>
+    <ul class="contact-list">
+      <li>Nombre de tu mascota.</li>
+      <li>Qué te gustaría mostrar (juegos, paseos, trucos, momentos tiernos, etc.).</li>
+      <li>Si el video es para Instagram, TikTok u otra red.</li>
+    </ul>
+
+    <p class="contact-section-title">Si tu video es para tu PyME 🛠️</p>
+    <ul class="contact-list">
+      <li>Nombre de tu negocio y qué ofreces.</li>
+      <li>Qué quieres destacar: productos, taller, clientes, proceso, etc.</li>
+      <li>Para qué usarás el video (redes sociales, anuncios, página web, etc.).</li>
+    </ul>
+
+    <p class="contact-section-title">Cómo avanzar</p>
+    <p>
+      Envíame un mensaje con esta información por el medio que prefieras
+      (correo, WhatsApp o redes sociales) y te propongo ideas de video,
+      duración recomendada y formato ideal para tus plataformas.
+    </p>
+
+    <!--
+      Aquí puedes agregar más adelante tus datos específicos, por ejemplo:
+      - Correo
+      - Número de WhatsApp
+      - Usuario de Instagram
+      Sin que yo invente nada por ti :)
+    -->
+
+  </div>
+
+  <!-- Botón para volver al Home -->
+  <div class="back-home">
+    <a href="index.html">Volver al Home</a>
+  </div>
+
 </body>
 </html>
-
