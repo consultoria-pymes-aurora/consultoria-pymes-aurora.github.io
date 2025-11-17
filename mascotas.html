@@ -11,25 +11,37 @@
     body {
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
 
-    .zoom-img {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 10px;
-      width: 400px;
-      max-width: 90%;
-      margin-top: 20px;
+    /* ===== HEADER PROFESIONAL (Opción B) ===== */
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 25px 0 10px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .zoom-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
     }
 
+    header h1 {
+      margin: 8px 0 0 0;
+      font-size: 2rem;
+    }
+
+    /* ===== MENÚ ===== */
     nav {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 15px 0;
     }
 
     nav a {
@@ -50,27 +62,63 @@
       transform: translateY(-2px);
     }
 
+    /* ===== IMÁGENES ===== */
+    .zoom-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      width: 400px;
+      max-width: 90%;
+      margin-top: 20px;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    /* ===== CONTACTO ===== */
     .contacto-section {
       text-align: center !important;
       font-size: 1.6rem;
       font-weight: bold;
       margin: 50px 0;
-      width: 100%;
-      display: block;
     }
 
+    /* ===== WHATSAPP FLOATING BUTTON ===== */
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      z-index: 2000;
+    }
+
+    .whatsapp-btn img {
+      width: 38px;
+      height: 38px;
+    }
+
+    /* ===== MODO CELULAR ===== */
     @media (max-width: 600px) {
 
       body { font-size: 1.35rem; }
 
-      h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.9rem; }
+      header img { width: 60px; height: 60px; }
+      header h1 { font-size: 2rem; }
 
       nav a {
         padding: 16px 22px;
         font-size: 1.35rem;
       }
 
+      h2 { font-size: 1.9rem; }
       p { font-size: 1.35rem; }
 
       img {
@@ -87,11 +135,13 @@
 </head>
 <body>
 
-  <h1>😀Dueños de Mascotas😀</h1>
-  <p>(Videos bakánes hechos con amor para tu mascota)</p>
+  <!-- HEADER -->
+  <header>
+    <img src="favicon.svg">
+    <h1>VIDEOS BAKANES</h1>
+  </header>
 
-  <hr>
-
+  <!-- MENÚ -->
   <nav>
     <a href="index.html">Home</a>
     <a href="pymes.html">Dueños de PyMEs</a>
@@ -99,11 +149,9 @@
     <a href="contacto.html">Contacto</a>
   </nav>
 
-  <hr>
-
   <h2>Videos para Mascotas</h2>
   <p>
-    ¿Quieres un video hermoso para tu mascota?<br>
+    ¿Quieres un video adorable y profesional de tu mascota?<br>
     Haz click <a href="contacto.html"><b>aquí</b></a>.
   </p>
 
@@ -116,6 +164,11 @@
   <p class="contacto-section">
     <a href="contacto.html">Contacto</a>
   </p>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a class="whatsapp-btn" href="https://wa.me/56982855148">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  </a>
 
 </body>
 </html>
