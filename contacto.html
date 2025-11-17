@@ -11,14 +11,37 @@
     body {
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
+    /* ===== HEADER PROFESIONAL (Opción B) ===== */
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 25px 0 10px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      margin: 8px 0 0 0;
+      font-size: 2rem;
+    }
+
+    /* ===== MENÚ ===== */
     nav {
       text-align: center;
-      margin: 20px 0;
+      margin: 15px 0;
     }
 
     nav a {
@@ -39,6 +62,7 @@
       transform: translateY(-2px);
     }
 
+    /* ===== TARJETA ===== */
     .contact-card {
       max-width: 600px;
       margin: 30px auto 50px auto;
@@ -52,53 +76,21 @@
     .contact-card h2 {
       text-align: center;
       margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .contact-card p, ul {
+      font-size: 1.25rem;
+      line-height: 1.6;
     }
 
     .back-home {
       margin-bottom: 40px;
     }
 
-    @media (max-width: 600px) {
-      body { font-size: 1.35rem; }
-      h1, h2 { font-size: 2.2rem; }
-      nav a { padding: 16px 22px; font-size: 1.35rem; }
-      .contact-card { padding: 30px 25px; }
-    }
-
-  </style>
-</head>
-<body>
-
-  <h1>😀Contacto😀</h1>
-  <p>(Solo respondo mensajes de WhatsApp)</p>
-
-  <hr>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pymes.html">Dueños de PyMEs</a>
-    <a href="mascotas.html">Dueños de Mascotas</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-
-  <hr>
-
-  <div class="contact-card">
-    <h2>Contáctame por WhatsApp</h2>
-
-    <p>
-      Escríbeme y te respondo personalmente 🙂
-    </p>
-
-    <p>
-      👉 <a href="https://wa.me/56982855148"><b>Haz click aquí para escribirme por WhatsApp</b></a>
-    </p>
-
-  </div>
-
-  <div class="back-home">
-    <a href="index.html">Volver al Home</a>
-  </div>
-
-</body>
-</html>
+    .back-home a {
+      text-decoration: none;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 12px 18px;
+      border-radius: 8px;
