@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Dueños de PyMEs</title>
-  <link rel="stylesheet" href="style.css">
 
   <style>
 
@@ -16,6 +15,8 @@
     .zoom-img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       border-radius: 10px;
+      width: 400px;
+      max-width: 90%;
       margin-top: 20px;
     }
 
@@ -54,6 +55,14 @@
       margin: 50px 0;
     }
 
+    @media (max-width: 600px) {
+      body { font-size: 1.2rem; }
+      h1, h2 { font-size: 1.8rem; }
+      nav a { padding: 14px 20px; font-size: 1.2rem; }
+      img { width: 90% !important; max-width: 500px; }
+      .contacto-section { font-size: 1.8rem !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -75,12 +84,12 @@
   <h2>Videos Profesionales para tu Negocio</h2>
   <p>
     ¿Quieres grabar un video bakán para tu PyME?<br>
-    ¿Necesitas mostrar tus productos o servicios de manera profesional?<br>
-    Trabajo con herramientas de video avanzadas para crear contenido atractivo.
+    ¿Necesitas mostrar tus productos o servicios?<br>
+    Trabajo con herramientas de video avanzadas.
   </p>
 
   <a href="contacto.html">
-    <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400" class="zoom-img">
+    <img src="pyme.jpg" alt="PyME" class="zoom-img">
   </a>
 
   <hr>
