@@ -2,46 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Videos Bakanes - Dueños de PyMEs</title>
+  <title>Dueños de PyMEs</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* Fondo general */
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      text-align: center; /* CENTRA TODO */
+    }
+
+    /* Animación hover (como index.html) */
+    .zoom-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    /* Contacto grande + centrado + bold */
+    .contacto-section {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 40px 0;
+    }
+
+    /* Menú igual al Home */
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 0 6px;
+      background: #ffffff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+  </style>
 </head>
 <body>
-  <h1>Dueños de PyMEs</h1>
 
+  <!-- TÍTULO IGUAL AL HOME -->
+  <h1>😀Dueños de PyMEs😀</h1>
+  <p>(Videos bakánes hechos con cariño para tu negocio)</p>
+
+  <hr>
+
+  <!-- MENÚ IGUAL AL HOME -->
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="pymes.html">Dueños de PyMEs</a> |
-    <a href="mascotas.html">Dueños de Mascotas</a> |
+    <a href="index.html">Home</a>
+    <a href="pymes.html">Dueños de PyMEs</a>
+    <a href="mascotas.html">Dueños de Mascotas</a>
     <a href="contacto.html">Contacto</a>
   </nav>
 
   <hr>
 
-  <p>¿Un video de tu taller protagonizado por tus propios colegas? Haz click en el siguiente video.</p>
+  <h2>Videos Profesionales para tu Negocio</h2>
+  <p>
+    ¿Quieres grabar un video bakán para tu PyME?<br>
+    ¿Necesitas mostrar tus productos o servicios de manera profesional?<br>
+    Trabajo con herramientas de video avanzadas para crear contenido atractivo.
+  </p>
 
-  <!-- YouTube video 1: https://www.youtube.com/watch?reload=9&v=xgbmFFnHwYY -->
-  <div>
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/xgbmFFnHwYY"
-      title="Video PyME colegas"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <!-- Imagen principal (clickeable si quieres) -->
+  <a href="contacto.html">
+    <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400" class="zoom-img">
+  </a>
 
   <hr>
 
-  <p>Quizás tú y tus colegas son muy tímidos. ¿Te gustaría ver cómo quedaría un video completamente generado por Inteligencia Artificial?</p>
+  <!-- CONTACTO GRANDE, CENTRADO, BOLD (igual al Home) -->
+  <p class="contacto-section">
+    <a href="contacto.html">Contacto</a>
+  </p>
 
-  <!-- YouTube video 2: https://www.youtube.com/watch?v=5DWhBivjTBg -->
-  <div>
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/5DWhBivjTBg"
-      title="Video PyME IA"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
 </body>
 </html>
-
