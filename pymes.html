@@ -2,23 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dueños de PyMEs</title>
+  <title>Videos Bakanes - Home</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
 
-    /* Fondo general */
     body {
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
-      text-align: center; /* CENTRA TODO */
     }
 
-    /* Animación hover (como index.html) */
+    .center {
+      text-align: center;
+      margin: 20px 0;
+    }
+
     .zoom-img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       border-radius: 10px;
-      margin-top: 20px;
     }
 
     .zoom-img:hover {
@@ -26,15 +27,6 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
-    /* Contacto grande + centrado + bold */
-    .contacto-section {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin: 40px 0;
-    }
-
-    /* Menú igual al Home */
     nav {
       text-align: center;
       margin-bottom: 20px;
@@ -58,17 +50,23 @@
       transform: translateY(-2px);
     }
 
+    /* CONTACTO estilo especial (NO agregar en contacto.html) */
+    .contacto-section {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 50px 0;
+    }
+
   </style>
 </head>
 <body>
 
-  <!-- TÍTULO IGUAL AL HOME -->
-  <h1>😀Dueños de PyMEs😀</h1>
-  <p>(Videos bakánes hechos con cariño para tu negocio)</p>
+  <h1>😀Videos Bakanes😀</h1>
+  <p>(Hechos con amor y herramientas de video profesionales)</p>
 
   <hr>
 
-  <!-- MENÚ IGUAL AL HOME -->
   <nav>
     <a href="index.html">Home</a>
     <a href="pymes.html">Dueños de PyMEs</a>
@@ -78,21 +76,34 @@
 
   <hr>
 
-  <h2>Videos Profesionales para tu Negocio</h2>
+  <h2>Dueños de Mascotas</h2>
   <p>
-    ¿Quieres grabar un video bakán para tu PyME?<br>
-    ¿Necesitas mostrar tus productos o servicios de manera profesional?<br>
-    Trabajo con herramientas de video avanzadas para crear contenido atractivo.
+    ¿Quieres tener un video bakán de tu linda mascota para subirlo a Instagram?
+    Haz click <a href="mascotas.html">aquí</a>.
   </p>
 
-  <!-- Imagen principal (clickeable si quieres) -->
-  <a href="contacto.html">
-    <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400" class="zoom-img">
-  </a>
+  <div class="center">
+    <a href="mascotas.html">
+      <img src="luna.jpg" alt="Foto de Luna" width="400" class="zoom-img">
+    </a>
+  </div>
 
   <hr>
 
-  <!-- CONTACTO GRANDE, CENTRADO, BOLD (igual al Home) -->
+  <h2>Dueños de PyMEs</h2>
+  <p>
+    ¿Necesitas generar videos y contenido para tu tienda o taller?
+    Haz click <a href="pymes.html">aquí</a>.
+  </p>
+
+  <div class="center">
+    <a href="pymes.html">
+      <img src="pyme.jpg" alt="Foto de un pequeño negocio" width="400" class="zoom-img">
+    </a>
+  </div>
+
+  <hr>
+
   <p class="contacto-section">
     <a href="contacto.html">Contacto</a>
   </p>
