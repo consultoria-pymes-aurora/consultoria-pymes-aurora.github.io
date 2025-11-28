@@ -52,12 +52,21 @@
       border-radius: 12px;
       transition: 0.3s;
       border: 6px solid #ccc; /* BORDE */
-      margin-bottom: 25px;     /* ESPACIO ENTRE VIDEOS */
     }
 
     .zoom-img:hover {
       transform: scale(1.03);
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    /* NUEVO: CONTENEDOR VERTICAL PARA VIDEOS */
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; /* Espacio vertical entre videos */
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
 
     .contacto-section {
@@ -118,15 +127,20 @@
   Haz click <a href="contacto.html"><b>aquí</b></a>.
 </p>
 
-<!-- PRIMER VIDEO -->
-<a href="https://www.youtube.com/shorts/Jl3A2fpGwz8" target="_blank">
-  <img src="luna.jpg" class="zoom-img">
-</a>
+<!-- CONTENEDOR DE VIDEOS UNO SOBRE OTRO -->
+<div class="video-container">
 
-<!-- SEGUNDO VIDEO CON THUMBNAIL Y BORDE -->
-<a href="https://youtube.com/shorts/R7bV_Ro7DQQ" target="_blank">
-  <img src="https://img.youtube.com/vi/R7bV_Ro7DQQ/maxresdefault.jpg" class="zoom-img">
-</a>
+  <!-- VIDEO 1 — COLORINA -->
+  <a href="https://www.youtube.com/shorts/Jl3A2fpGwz8" target="_blank">
+    <img src="Portada - Colorina.jpeg" class="zoom-img">
+  </a>
+
+  <!-- VIDEO 2 — LUNIS -->
+  <a href="https://youtube.com/shorts/R7bV_Ro7DQQ" target="_blank">
+    <img src="Portada - Lunis.jpeg" class="zoom-img">
+  </a>
+
+</div>
 
 <p class="contacto-section">
   <a href="contacto.html">Contacto</a>
