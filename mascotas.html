@@ -47,11 +47,12 @@
     nav a:hover { background: #e6e6e6; }
 
     .zoom-img {
-      width: 100%;
+      width: 100%;       /* Ajusta al ancho del celular */
+      height: auto;      /* Evita distorsión */
       max-width: 800px;
       border-radius: 12px;
       transition: 0.3s;
-      border: 6px solid #ccc; /* BORDE */
+      border: 6px solid #ccc;
     }
 
     .zoom-img:hover {
@@ -59,12 +60,11 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
-    /* NUEVO: CONTENEDOR VERTICAL PARA VIDEOS */
     .video-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 30px; /* Espacio entre videos */
+      gap: 30px;
       margin-top: 30px;
       margin-bottom: 30px;
     }
@@ -126,7 +126,9 @@
 <p>
   ¿Tu <b>perrita</b> es la más linda del Universo y sus alrededores?<br><br>
   ¿Quieres tener un video bakán de tu <b>gatito</b> haciendo travesuras?<br><br>
-  Conversemos cómo retratar a tu mascota con un link compartible en Instagram o YouTube.<br>
+  Conversemos cómo retratar a tu mascota con un link compartible en 
+  <b style="color:red">Instagram</b> o 
+  <b style="color:red">YouTube</b>.<br><br>
 </p>
 
 <!-- CONTENEDOR DE VIDEOS UNO SOBRE OTRO -->
@@ -154,5 +156,3 @@
 
 </body>
 </html>
-
-
