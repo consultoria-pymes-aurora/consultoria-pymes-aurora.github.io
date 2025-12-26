@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad – Videos Bakanes</title>
+  <link rel="icon" href="favicon.svg">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    a {
+      color: #d32f2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="favicon.svg" alt="Logo">
+    <strong>VIDEOS BAKANES</strong>
+  </header>
+
+  <main>
+
+    <h1>Política de Privacidad</h1>
+
+    <p>
+      Videos Bakanes es un sitio web informativo que muestra ejemplos de videos cortos
+      creados para mascotas y pequeños proyectos, con fines demostrativos.
+    </p>
+
+    <p>
+      Este sitio no solicita, almacena ni procesa datos personales de los visitantes.
+      No cuenta con formularios, registros de usuarios ni sistemas de pago integrados.
+    </p>
+
+    <p>
+      Los enlaces externos presentes en este sitio (por ejemplo, a YouTube o WhatsApp)
+      redirigen a plataformas de terceros, las cuales operan bajo sus propias políticas
+      de privacidad y términos de uso.
+    </p>
+
+    <p>
+      Videos Bakanes no se hace responsable por el contenido, funcionamiento o prácticas
+      de privacidad de dichos sitios externos.
+    </p>
+
+    <p>
+      Si tienes alguna consulta relacionada con este sitio, puedes visitar la página de
+      <a href="contacto.html">Contacto</a>.
+    </p>
+
+  </main>
+
+</body>
+</html>
