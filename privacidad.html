@@ -7,69 +7,124 @@
   <link rel="icon" href="favicon.svg">
 
   <style>
+
     body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      color: #333;
-      line-height: 1.6;
+      text-align: center; /* CENTRADO TOTAL */
     }
 
+    /* HEADER */
     header {
-      background-color: white;
-      padding: 15px;
+      background: #ffffff;
+      text-align: center;
+      padding: 25px 0 10px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
       position: sticky;
       top: 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      justify-content: center;
-      z-index: 999;
+      z-index: 1000;
     }
 
     header img {
-      width: 40px;
-      height: 40px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
     }
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header h1 {
+      margin: 8px 0 0;
+      font-size: 2rem;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
+    /* MENÚ */
+    nav {
+      margin: 15px 0;
     }
 
-    p {
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-
-    a {
-      color: #d32f2f;
+    nav a {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 0 6px;
+      background: #ffffff;
+      border-radius: 8px;
       text-decoration: none;
+      color: #333;
       font-weight: bold;
+      border: 1px solid #ddd;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 1rem;
     }
+
+    nav a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+    /* IMÁGENES */
+    .zoom-img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    .contacto-section {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 40px 0;
+    }
+
+    /* WHATSAPP */
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      z-index: 2000;
+    }
+
+    .whatsapp-btn img {
+      width: 34px;
+    }
+
+    /* CELULAR */
+    @media (max-width: 600px) {
+      body { font-size: 1.3rem; }
+      header img { width: 60px; height: 60px; }
+      header h1 { font-size: 2rem; }
+      nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
+      h2 { font-size: 1.8rem; }
+      p { font-size: 1.3rem; }
+      .zoom-img { max-width: 100% !important; }
+      .contacto-section { font-size: 1.8rem; }
+      .whatsapp-btn { width: 55px; height: 55px; }
+      .whatsapp-btn img { width: 30px; }
+    }
+
   </style>
 </head>
-
 <body>
 
-  <header>
-    <img src="favicon.svg" alt="Logo">
-    <strong>VIDEOS BAKANES</strong>
-  </header>
+<header>
+  <img src="favicon.svg">
+  <h1>VIDEOS BAKANES</h1>
+</header>
 
-  <main>
-
-    <h1>Política de Privacidad</h1>
-
-    <nav>
+<nav>
   <a href="index.html">Home</a>
   <a href="mascotas.html">Dueños de Mascotas</a>
   <a href="pymes.html">Dueños de PyMEs</a>
