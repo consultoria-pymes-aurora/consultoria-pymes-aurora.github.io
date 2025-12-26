@@ -10,54 +10,79 @@
   <style>
 
     body {
-      background: #f7f7f7;
+      background-color: #f7f7f7;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center; /* CENTRADO */
+      text-align: center; /* CENTRADO TOTAL */
     }
 
+    /* HEADER */
     header {
-      background: white;
-      padding: 25px 0 10px;
+      background: #ffffff;
       text-align: center;
+      padding: 25px 0 10px 0;
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
 
-    header img { width: 70px; height: 70px; border-radius: 50%; }
-    header h1 { font-size: 2rem; margin-top: 10px; }
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      margin: 8px 0 0;
+      font-size: 2rem;
+    }
+
+    /* MENÚ */
+    nav {
+      margin: 15px 0;
+    }
 
     nav a {
       display: inline-block;
       padding: 8px 14px;
-      background: #fff;
-      border: 1px solid #ddd;
       margin: 0 6px;
+      background: #ffffff;
       border-radius: 8px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      border: 1px solid #ddd;
+      transition: background 0.3s ease, transform 0.2s ease;
       font-size: 1rem;
+    }
+
+    nav a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+    /* IMÁGENES */
+    .zoom-img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
       transition: 0.3s;
     }
 
-    nav a:hover { background: #e6e6e6; }
-
-    .contact-card {
-      max-width: 600px;
-      background: white;
-      margin: 30px auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-      text-align: left;
+    .zoom-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
-    .contact-card p { font-size: 1.3rem; }
+    .contacto-section {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 40px 0;
+    }
 
+    /* WHATSAPP */
     .whatsapp-btn {
       position: fixed;
       right: 20px;
@@ -73,15 +98,20 @@
       z-index: 2000;
     }
 
-    .whatsapp-btn img { width: 34px; }
+    .whatsapp-btn img {
+      width: 34px;
+    }
 
+    /* CELULAR */
     @media (max-width: 600px) {
       body { font-size: 1.3rem; }
-      header img { width: 60px; }
+      header img { width: 60px; height: 60px; }
       header h1 { font-size: 2rem; }
       nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
-      .contact-card p { font-size: 1.6rem; }
-      .contact-card h2 { font-size: 2rem; }
+      h2 { font-size: 1.8rem; }
+      p { font-size: 1.3rem; }
+      .zoom-img { max-width: 100% !important; }
+      .contacto-section { font-size: 1.8rem; }
       .whatsapp-btn { width: 55px; height: 55px; }
       .whatsapp-btn img { width: 30px; }
     }
@@ -97,14 +127,15 @@
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="pymes.html">Dueños de PyMEs</a>
   <a href="mascotas.html">Dueños de Mascotas</a>
+  <a href="pymes.html">Dueños de PyMEs</a>
   <a href="contacto.html">Contacto</a>
+  <a href="privacidad.html">Privacidad</a>
 </nav>
 
 <div class="contact-card">
   <h2>Contáctame por WhatsApp</h2>
-  <p>Respondo siempre por WhatsApp — es la forma más rápida.</p>
+  <p>Hola, soy Alejandro. Vivo en Ñuñoa (Santiago) y te dejo mi teléfono para que me escribas (+569 8285 5148). Respondo súper rápido por WhatsApp — es la forma más rápida.</p>
   <p>👉 <a href="https://wa.me/56982855148"><b>Haz click aquí</b></a></p>
 </div>
 
@@ -114,3 +145,4 @@
 
 </body>
 </html>
+
