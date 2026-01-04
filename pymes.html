@@ -14,13 +14,12 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center; /* CENTRADO TOTAL */
+      text-align: center;
     }
 
     /* HEADER */
     header {
       background: #ffffff;
-      text-align: center;
       padding: 25px 0 10px 0;
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
       position: sticky;
@@ -63,7 +62,19 @@
       transform: translateY(-2px);
     }
 
-    /* IMÁGENES */
+    /* CONTENIDO */
+    h2 {
+      margin-top: 50px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    /* IMAGEN */
     .zoom-img {
       width: 100%;
       max-width: 800px;
@@ -76,30 +87,16 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
+    /* CTA */
     .contacto-section {
-      font-size: 1.4rem;
+      margin: 50px 0 70px;
+      font-size: 1.5rem;
       font-weight: bold;
-      margin: 40px 0;
     }
 
-    /* WHATSAPP */
-    .whatsapp-btn {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #25D366;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      z-index: 2000;
-    }
-
-    .whatsapp-btn img {
-      width: 34px;
+    .contacto-section a {
+      color: #d32f2f;
+      text-decoration: none;
     }
 
     /* CELULAR */
@@ -108,12 +105,10 @@
       header img { width: 60px; height: 60px; }
       header h1 { font-size: 2rem; }
       nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
-      h2 { font-size: 1.8rem; }
-      p { font-size: 1.3rem; }
-      .zoom-img { max-width: 100% !important; }
+      h2 { font-size: 1.9rem; }
+      p { font-size: 1.4rem; }
+      .zoom-img { max-width: 100%; }
       .contacto-section { font-size: 1.8rem; }
-      .whatsapp-btn { width: 55px; height: 55px; }
-      .whatsapp-btn img { width: 30px; }
     }
 
   </style>
@@ -121,7 +116,7 @@
 <body>
 
 <header>
-  <img src="favicon.svg">
+  <img src="favicon.svg" alt="Logo Videos Bakanes">
   <h1>VIDEOS BAKANES</h1>
 </header>
 
@@ -133,24 +128,20 @@
   <a href="privacidad.html">Privacidad</a>
 </nav>
 
-<h2>Videos Profesionales para tu Negocio</h2>
+<h2>Videos profesionales para tu negocio</h2>
+
 <p>
-  ¿Quieres mostrar tus productos o servicios de forma profesional?<br>
-  Haz click <a href="contacto.html"><b>aquí</b></a>.
+  ¿Quieres mostrar tus productos o servicios de forma clara y profesional?<br>
+  Si te interesa conversar, puedes ir a la página de contacto.
 </p>
 
 <a href="contacto.html">
-  <img src="pyme.jpg" class="zoom-img">
+  <img src="pyme.jpg" class="zoom-img" alt="Video para PyMEs">
 </a>
 
-<p class="contacto-section">
-  <a href="contacto.html">Contacto</a>
-</p>
-
-<a class="whatsapp-btn" href="https://wa.me/56982855148">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
+<div class="contacto-section">
+  <a href="contacto.html">Ir a la página de Contacto</a>
+</div>
 
 </body>
 </html>
-
