@@ -14,7 +14,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center; /* CENTRADO TOTAL */
+      text-align: center;
     }
 
     /* HEADER */
@@ -63,43 +63,25 @@
       transform: translateY(-2px);
     }
 
-    /* IMÁGENES */
-    .zoom-img {
-      width: 100%;
-      max-width: 800px;
+    /* CONTACTO */
+    .contact-card {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px 20px;
+      background: #ffffff;
       border-radius: 12px;
-      transition: 0.3s;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
-    .zoom-img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    .contact-card h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    .contacto-section {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin: 40px 0;
-    }
-
-    /* WHATSAPP */
-    .whatsapp-btn {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #25D366;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      z-index: 2000;
-    }
-
-    .whatsapp-btn img {
-      width: 34px;
+    .contact-card p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 12px 0;
     }
 
     /* CELULAR */
@@ -108,12 +90,8 @@
       header img { width: 60px; height: 60px; }
       header h1 { font-size: 2rem; }
       nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
-      h2 { font-size: 1.8rem; }
-      p { font-size: 1.3rem; }
-      .zoom-img { max-width: 100% !important; }
-      .contacto-section { font-size: 1.8rem; }
-      .whatsapp-btn { width: 55px; height: 55px; }
-      .whatsapp-btn img { width: 30px; }
+      .contact-card h2 { font-size: 2.1rem; }
+      .contact-card p { font-size: 1.4rem; }
     }
 
   </style>
@@ -121,7 +99,7 @@
 <body>
 
 <header>
-  <img src="favicon.svg">
+  <img src="favicon.svg" alt="Logo Videos Bakanes">
   <h1>VIDEOS BAKANES</h1>
 </header>
 
@@ -134,17 +112,12 @@
 </nav>
 
 <div class="contact-card">
-  <h2>Contáctame por WhatsApp</h2>
-  <p>Hola, soy Alejandro. Vivo en Ñuñoa (Santiago) y te dejo mi teléfono para que me escribas <a href="https://wa.me/56982855148"><b>+569 8285 5148</b></a></p>
-  <p>Respondo súper rápido por <b>WhatsApp</b></p>
+  <h2>Contacto</h2>
+  <p>Hola, soy Alejandro.</p>
+  <p>Vivo en Ñuñoa (Santiago).</p>
+  <p>Si quieres contactarme, puedes escribirme o llamarme al:</p>
+  <p><b>+56 9 8285 5148</b></p>
 </div>
-
-<a class="whatsapp-btn" href="https://wa.me/56982855148">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
 
 </body>
 </html>
-
-
-
