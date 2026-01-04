@@ -14,13 +14,12 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center; /* TODO CENTRADO EN ESCRITORIO */
+      text-align: center;
     }
 
-    /* ===== HEADER PROFESIONAL (OPCIÓN B) ===== */
+    /* HEADER */
     header {
       background: #ffffff;
-      text-align: center;
       padding: 25px 0 10px 0;
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
       position: sticky;
@@ -63,17 +62,23 @@
       transform: translateY(-2px);
     }
 
-    .center {
-      text-align: center;
-      margin: 20px 0;
+    h2 {
+      margin-top: 40px;
+      font-size: 2rem;
     }
 
-    /* ===== IMÁGENES ===== */
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    /* IMÁGENES */
     .zoom-img {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 12px;
       width: 100%;
       max-width: 800px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .zoom-img:hover {
@@ -81,34 +86,31 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.3);
     }
 
-    .contacto-section {
+    .center {
+      margin: 20px 0;
+    }
+
+    hr {
+      margin: 60px auto;
+      width: 60%;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    .contacto-section,
+    .privacidad-section {
       font-size: 1.4rem;
       font-weight: bold;
-      margin: 40px 0;
+      margin: 30px 0;
     }
 
-    /* ===== BOTÓN FLOTANTE WHATSAPP ===== */
-    .whatsapp-btn {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #25D366;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      z-index: 2000;
+    .contacto-section a,
+    .privacidad-section a {
+      color: #d32f2f;
+      text-decoration: none;
     }
 
-    .whatsapp-btn img {
-      width: 34px;
-      height: 34px;
-    }
-
-    /* ===== MODO CELULAR — IMÁGENES 100% ANCHO Y BOTONES MÁS CHICOS ===== */
+    /* CELULAR */
     @media (max-width: 600px) {
 
       body { font-size: 1.3rem; }
@@ -117,36 +119,23 @@
 
       header h1 { font-size: 2rem; }
 
-      h2 { font-size: 1.8rem; }
-      p { font-size: 1.3rem; }
+      h2 { font-size: 1.9rem; }
+      p { font-size: 1.4rem; }
 
-      /* BOTONES MÁS PEQUEÑOS EN CELULAR */
       nav a {
         padding: 10px 12px;
         font-size: 1.2rem;
         margin: 4px;
       }
 
-      /* IMÁGENES LLENAN TODO EL ANCHO DEL TELÉFONO */
       .zoom-img {
-        width: 100% !important;
-        max-width: 100% !important;
+        width: 100%;
+        max-width: 100%;
       }
 
-      .contacto-section {
-        font-size: 1.8rem !important;
-      }
-
-      .whatsapp-btn {
-        width: 55px;
-        height: 55px;
-        right: 16px;
-        bottom: 16px;
-      }
-
-      .whatsapp-btn img {
-        width: 30px;
-        height: 30px;
+      .contacto-section,
+      .privacidad-section {
+        font-size: 1.8rem;
       }
     }
 
@@ -154,64 +143,54 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="favicon.svg" alt="Logo VB">
-    <h1>VIDEOS BAKANES</h1>
-  </header>
+<header>
+  <img src="favicon.svg" alt="Logo Videos Bakanes">
+  <h1>VIDEOS BAKANES</h1>
+</header>
 
-  <!-- MENÚ -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="mascotas.html">Dueños de Mascotas</a>
-    <a href="pymes.html">Dueños de PyMEs</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="privacidad.html">Privacidad</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="mascotas.html">Dueños de Mascotas</a>
+  <a href="pymes.html">Dueños de PyMEs</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="privacidad.html">Privacidad</a>
+</nav>
 
-  <h2>Dueños de Mascotas</h2>
-  <p>
-    ¿Quieres un video bakán de tu mascota?
-    Haz click <a href="mascotas.html"><b>aquí</b></a>.
-  </p>
+<h2>Dueños de Mascotas</h2>
+<p>
+  ¿Quieres un video bakán de tu mascota?
+  Haz click <a href="mascotas.html"><b>aquí</b></a>.
+</p>
 
-  <div class="center">
-    <a href="mascotas.html">
-      <img src="luna.jpg" class="zoom-img" alt="Luna">
-    </a>
-  </div>
-
-  <hr>
-
-  <h2>Dueños de PyMEs</h2>
-  <p>
-    ¿Necesitas videos profesionales?
-    Haz click <a href="pymes.html"><b>aquí</b></a>.
-  </p>
-
-  <div class="center">
-    <a href="pymes.html">
-      <img src="pyme.jpg" class="zoom-img" alt="PyME">
-    </a>
-  </div>
-
-  <hr>
-
-  
-  <p class="privacidad-section">
-<a href="privacidad.html">Política de Privacidad</a>
-  </p>
-  
-  <p class="contacto-section">
-    <a href="contacto.html">Contacto</a>
-  </p>
-
-  <!-- BOTÓN WHATSAPP -->
-  <a class="whatsapp-btn" href="https://wa.me/56982855148">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+<div class="center">
+  <a href="mascotas.html">
+    <img src="luna.jpg" class="zoom-img" alt="Video para Mascotas">
   </a>
+</div>
+
+<hr>
+
+<h2>Dueños de PyMEs</h2>
+<p>
+  ¿Necesitas videos profesionales para tu negocio?
+  Haz click <a href="pymes.html"><b>aquí</b></a>.
+</p>
+
+<div class="center">
+  <a href="pymes.html">
+    <img src="pyme.jpg" class="zoom-img" alt="Video para PyMEs">
+  </a>
+</div>
+
+<hr>
+
+<p class="privacidad-section">
+  <a href="privacidad.html">Política de Privacidad</a>
+</p>
+
+<p class="contacto-section">
+  <a href="contacto.html">Contacto</a>
+</p>
 
 </body>
 </html>
-
-
