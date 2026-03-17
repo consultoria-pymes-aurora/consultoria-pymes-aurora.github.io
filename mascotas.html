@@ -17,7 +17,6 @@
       text-align: center;
     }
 
-    /* HEADER */
     header {
       background: #ffffff;
       text-align: center;
@@ -39,7 +38,6 @@
       font-size: 2rem;
     }
 
-    /* MENÚ */
     nav {
       margin: 15px 0;
     }
@@ -63,17 +61,27 @@
       transform: translateY(-2px);
     }
 
-    /* IMÁGENES */
-    .zoom-img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 12px;
-      transition: 0.3s;
+    /* VIDEOS */
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 20px;
     }
 
-    .zoom-img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    .video-wrapper {
+      width: 320px;
+      height: 570px; /* formato vertical tipo Shorts */
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     .contacto-section {
@@ -82,14 +90,12 @@
       margin: 40px 0;
     }
 
-    /* CTA CONTACTO */
     .cta-contacto {
       margin: 50px 0 80px;
       font-size: 1.4rem;
       font-weight: bold;
     }
 
-    /* CELULAR */
     @media (max-width: 600px) {
       body { font-size: 1.3rem; }
       header img { width: 60px; height: 60px; }
@@ -97,7 +103,10 @@
       nav a { padding: 10px 12px; font-size: 1.2rem; margin: 4px; }
       h2 { font-size: 1.8rem; }
       p { font-size: 1.3rem; }
-      .zoom-img { max-width: 100% !important; }
+      .video-wrapper {
+        width: 90%;
+        height: 70vh;
+      }
       .contacto-section { font-size: 1.8rem; }
       .cta-contacto { font-size: 1.6rem; }
     }
@@ -139,19 +148,28 @@
 
 <div class="video-container">
 
-  <!-- IMAGEN 1 — COLORINA -->
-  <div class="thumb-wrapper">
-    <img src="Portada - Colorina diciembre 2025.png" class="zoom-img" alt="Colorina">
+  <!-- VIDEO 1 -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/arcEtgdneVM"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
-  <!-- IMAGEN 2 — COLORINA -->
-  <div class="thumb-wrapper">
-    <img src="Portada - Colorina.jpeg" class="zoom-img" alt="Colorina">
+  <!-- VIDEO 2 -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/Jl3A2fpGwz8"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
-  <!-- IMAGEN 3 — LUNIS -->
-  <div class="thumb-wrapper">
-    <img src="Portada - Lunis.jpeg" class="zoom-img" alt="Lunis">
+  <!-- VIDEO 3 -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/R7bV_Ro7DQQ"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
 </div>
